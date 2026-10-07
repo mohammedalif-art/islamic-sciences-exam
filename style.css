@@ -53,3 +53,10 @@ body[data-paper-style="minimal"] .paper-frame,body[data-paper-style="minimal"] .
 .university-logo img{max-height:20mm!important}.college-logo img{max-height:21mm!important}
 .identity .college-name{font-size:17px!important}.identity>strong:first-of-type{font-size:15px!important}
 @media print{.official-logo,.official-logo img{width:20mm!important;height:20mm!important;max-width:20mm!important;max-height:20mm!important}.paper-head{grid-template-columns:24mm 1fr 24mm!important}}
+
+/* Emergency definitive header sizing */
+.paper-head{grid-template-columns:24mm minmax(0,1fr) 24mm!important;height:28mm!important;min-height:28mm!important;max-height:28mm!important;overflow:hidden!important;padding:2mm 2mm 2.5mm!important}
+.official-logo{display:flex!important;width:20mm!important;height:20mm!important;min-width:20mm!important;min-height:20mm!important;max-width:20mm!important;max-height:20mm!important;padding:0!important;margin:auto!important;overflow:hidden!important;border:0!important;outline:0!important}
+.official-logo img,.university-logo img,.college-logo img{display:block!important;width:20mm!important;height:20mm!important;min-width:0!important;min-height:0!important;max-width:20mm!important;max-height:20mm!important;object-fit:contain!important;object-position:center!important;margin:0!important;padding:0!important}
+.watermark{display:none!important}
+@media print{.paper-head{height:27mm!important;min-height:27mm!important;max-height:27mm!important}.official-logo,.official-logo img,.university-logo img,.college-logo img{width:19mm!important;height:19mm!important;max-width:19mm!important;max-height:19mm!important}}
