@@ -45,3 +45,11 @@ body[data-paper-style="minimal"] .paper-frame,body[data-paper-style="minimal"] .
 .academic-ribbon{margin-top:3.5mm!important;text-transform:none;letter-spacing:.4px}
 .exam-title span{font-size:19px}.exam-title small{color:#755813;margin-top:3px}
 @media print{.watermark{opacity:.014}.official-logo img{filter:none}.paper-head{background:#fff!important}.identity>span{background:#fff!important;border:1px solid #dce6e0}}
+
+/* Balanced official logo sizing */
+.paper-head{grid-template-columns:25mm 1fr 25mm!important;min-height:27mm!important;padding:1.5mm 3mm 3mm!important}
+.official-logo{width:21mm!important;height:21mm!important;max-width:21mm!important;max-height:21mm!important;overflow:hidden!important}
+.official-logo img{width:100%!important;height:100%!important;max-width:21mm!important;max-height:21mm!important;object-fit:contain!important}
+.university-logo img{max-height:20mm!important}.college-logo img{max-height:21mm!important}
+.identity .college-name{font-size:17px!important}.identity>strong:first-of-type{font-size:15px!important}
+@media print{.official-logo,.official-logo img{width:20mm!important;height:20mm!important;max-width:20mm!important;max-height:20mm!important}.paper-head{grid-template-columns:24mm 1fr 24mm!important}}
